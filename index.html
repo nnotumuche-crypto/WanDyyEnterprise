@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Uche Wisdom Nnotum | Freelance Designer & Web Developer</title>
+
+<meta name="description" content="Uche Wisdom Nnotum (WanDyy) is a freelance graphic designer and web developer. I build gaming websites, create stunning designs, and manage live Free Fire platforms like Tee Crew.">
+<meta name="keywords" content="Uche Wisdom Nnotum, WanDyy, freelance graphic designer Nigeria, web developer, Free Fire updates, Tee Crew, portfolio">
+<meta name="author" content="Uche Wisdom Nnotum">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#ffffff;
+  color:#222;
+  scroll-behavior:smooth;
+}
+
+/* NAVIGATION */
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:#000;
+  padding:15px;
+  text-align:center;
+  z-index:1000;
+}
+nav a{
+  color:#fff;
+  margin:0 12px;
+  text-decoration:none;
+  font-weight:bold;
+}
+nav a:hover{color:#00ffcc}
+
+/* SECTIONS */
+section{
+  min-height:100vh;
+  padding:110px 20px;
+  max-width:950px;
+  margin:auto;
+  display:none;
+}
+section.active{display:block}
+
+/* ANIMATIONS */
+.fade{
+  opacity:0;
+  transform:translateY(30px);
+  transition:all .9s ease;
+}
+.fade.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* TEXT */
+h1,h2{margin-bottom:15px;color:#111}
+p{line-height:1.7;margin-bottom:15px}
+
+/* BUTTON */
+.btn{
+  display:inline-block;
+  padding:12px 22px;
+  background:#000;
+  color:#fff;
+  border-radius:25px;
+  text-decoration:none;
+  margin-top:10px;
+}
+.btn:hover{background:#222}
+
+/* GALLERY */
+.gallery img{
+  width:100%;
+  max-width:260px;
+  margin:10px;
+  border-radius:12px;
+  box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+/* CTA */
+#cta{
+  background:#f4f4f4;
+  padding:40px;
+  border-radius:18px;
+  text-align:center;
+}
+
+/* FOOTER */
+footer{
+  background:#000;
+  color:#fff;
+  text-align:center;
+  padding:18px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#" onclick="openPage('home')">Home</a>
+<a href="#" onclick="openPage('about')">About</a>
+<a href="#" onclick="openPage('design')">Design</a>
+<a href="#" onclick="openPage('services')">Services</a>
+<a href="#" onclick="openPage('proof')">Proof</a>
+<a href="#" onclick="openPage('contact')">Contact</a>
+</nav>
+
+<section id="home" class="active fade">
+<h1>Uche Wisdom Nnotum</h1>
+<p><strong>(WanDyy)</strong></p>
+<p><strong>Graphic Designer • Web Developer • Gaming Content Creator</strong></p>
+<p>
+I help individuals, gaming communities, and small brands stand out online through clean design,
+functional websites, and real digital projects.
+</p>
+<a class="btn" href="#" onclick="openPage('contact')">Hire Me</a>
+</section>
+
+<section id="about" class="fade">
+<h2>About Me</h2>
+<p>
+My name is <strong>Uche Wisdom Nnotum</strong>, popularly known as <strong>WanDyy</strong>. I am a freelance graphic designer and web developer based in Nigeria. I focus on building real digital solutions that are not only visually appealing but also practical and trustworthy.
+</p>
+<p>
+Rather than making empty claims, I prefer to showcase live projects that prove my skills. One of such projects is the
+<strong>♣️Têë Crëw♠️ Free Fire website</strong>, a live gaming platform where I share Free Fire updates, redeem codes, and community-related content.
+</p>
+<p>
+My work approach is simple: understand the goal, design with clarity, and deliver results. Whether you need graphics,
+a website, or a gaming platform, I am committed to quality, consistency, and growth.
+</p>
+</section>
+
+<section id="design" class="fade">
+<h2>Graphic Design Showcase</h2>
+<p>Some of my creative edits and designs:</p>
+<div class="gallery">
+<img src="images/design1.jpg" alt="Graphic design sample">
+<img src="images/design2.jpg" alt="Gaming poster design">
+<img src="images/design3.jpg" alt="Creative artwork">
+</div>
+<p><em>(You can replace these images with your own designs anytime.)</em></p>
+</section>
+
+<section id="services" class="fade">
+<h2>My Services</h2>
+<ul>
+<li>Professional graphic design (flyers, posters, gaming edits)</li>
+<li>Portfolio & business websites</li>
+<li>Gaming guild & update websites</li>
+<li>Website deployment using GitHub Pages</li>
+<li>Basic Google SEO setup</li>
+</ul>
+</section>
+
+<section id="proof" class="fade">
+<h2>Live Project Proof</h2>
+<p>This is a real project I built and currently manage:</p>
+<a class="btn" href="https://nnotumuche-crypto.github.io/teecrew/" target="_blank">
+Visit ♣️Têë Crëw♠️ Website
+</a>
+</section>
+
+<section id="contact" class="fade">
+<div id="cta">
+<h2>Let’s Work Together</h2>
+<p>If you want designs or a website that actually delivers results, reach out now.</p>
+<p><strong>WhatsApp:</strong> <a href="https://wa.me/2348086769203">08086769203</a></p>
+<p><strong>Email:</strong> <a href="mailto:nnotumuche@gmail.com">nnotumuche@gmail.com</a></p>
+<a class="btn" href="https://wa.me/2348086769203">Message Me on WhatsApp</a>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Uche Wisdom Nnotum (WanDyy)</p>
+</footer>
+
+<script>
+function openPage(id){
+  document.querySelectorAll('section').forEach(sec=>{
+    sec.classList.remove('active','show');
+  });
+  const page=document.getElementById(id);
+  page.classList.add('active');
+  setTimeout(()=>page.classList.add('show'),60);
+}
+window.onload=()=>{
+  document.querySelector('.active').classList.add('show');
+}
+</script>
+
+</body>
+  </html>
